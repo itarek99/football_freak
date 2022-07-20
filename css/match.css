@@ -216,8 +216,8 @@ body {
   color: #fff;
 }
 
-/* Media Queries */
-
+/****************** Media Queries ******************
+****************************************************/
 @media only screen and (max-width: 991.98px) {
   .container {
     max-width: 920px;

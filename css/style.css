@@ -222,7 +222,10 @@ body {
   color: #fff;
 }
 
-/* Media Queries */
+/****************** Media Queries ******************
+****************************************************/
+
+/******** Medium devices ***********/
 
 @media only screen and (max-width: 991.98px) {
   .container {
@@ -272,6 +275,8 @@ body {
   }
 }
 
+/******** Small devices ***********/
+
 @media only screen and (max-width: 767.98px) {
   .container {
     max-width: 640px;
@@ -292,6 +297,8 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/******** Mobile devices ***********/
 
 @media only screen and (max-width: 575.98px) {
   .container {
