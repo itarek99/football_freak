@@ -90,8 +90,9 @@ body {
 ****************************************************/
 
 .main {
-  margin-top: 80px;
+  margin-top: 130px;
   display: flex;
+  align-items: flex-start;
   gap: 24px;
 }
 
@@ -135,47 +136,40 @@ body {
 /****************** Blogs Section ******************
 ****************************************************/
 
-.blogs {
+.matches {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   gap: 24px;
+  margin-inline: auto;
 }
 
-.blog {
+.match {
   border: 1px solid var(--color-gray);
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   overflow: hidden;
+  padding: 32px;
+  padding-top: 48px;
+  text-align: center;
 }
 
-.blog__thumbnail {
-  width: 100%;
-}
-
-.blog__category {
-  font-size: 18px;
-  font-weight: 500;
-  display: inline-block;
-  padding: 6px 16px;
-  border-radius: 5px;
-  margin-bottom: 16px;
-  border: 1px solid var(--color-dark);
-}
-
-.blog__details {
-  padding: 1rem;
-}
-
-.blog__title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-.blog__info {
+.match__vs {
   display: flex;
-  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.match__title {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.match__time {
   color: var(--color-secondary);
+  margin-top: 8px;
 }
 
 /****************** Footer Section ******************
@@ -184,7 +178,7 @@ body {
 .footer {
   background-color: var(--color-dark);
   padding: 64px 0 48px;
-  margin-top: 80px;
+  margin-top: 130px;
 }
 
 .footer__logo {
@@ -263,7 +257,7 @@ body {
     margin: 0;
   }
 
-  .blogs {
+  .matches {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -288,7 +282,7 @@ body {
     margin-inline: auto;
   }
 
-  .blogs {
+  .matches {
     grid-template-columns: repeat(1, 1fr);
   }
 }
