@@ -27,7 +27,7 @@ body {
 .container {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 32px;
 }
 
 .line {
@@ -45,14 +45,16 @@ body {
   display: flex;
   gap: 32px;
   border-radius: 12px;
+  /* overflow: hidden; */
 }
 
 .header__text-box {
   margin-block: auto;
+  min-width: 40%;
 }
 
 .heading-primary {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1;
   text-transform: capitalize;
   margin-bottom: 16px;
@@ -178,6 +180,24 @@ body {
   color: var(--color-secondary);
 }
 
+.view-all {
+  text-align: center;
+  margin-top: 48px;
+  display: none;
+}
+
+.view-all__btn {
+  padding: 12px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 /****************** Footer Section ******************
 ****************************************************/
 
@@ -233,12 +253,16 @@ body {
   }
 
   .header {
-    height: 450px;
+    height: 480px;
     padding-inline: 40px;
   }
 
   .heading-primary {
-    font-size: 40px;
+    font-size: 32px;
+  }
+
+  .header__text {
+    font-style: 14px;
   }
 
   .main {
@@ -270,6 +294,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .view-all {
+    display: block;
+  }
+
   .footer {
     margin-top: 64px;
   }
@@ -296,6 +324,9 @@ body {
   .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
+  .view-all {
+    display: none;
+  }
 }
 
 /******** Mobile devices ***********/
@@ -303,12 +334,15 @@ body {
 @media only screen and (max-width: 575.98px) {
   .container {
     max-width: 480px;
+    padding: 8px;
   }
 
   .header__image {
     width: 95%;
   }
-
+  .header__text {
+    font-size: 14px;
+  }
   .main {
     margin-top: 48px;
   }
